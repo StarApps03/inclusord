@@ -1,0 +1,20 @@
+<div class="container-fluid">
+	<div class="row">
+	  <div class="col-xs-12 col-sm-12 col-md-12">
+	    <div class="navigation">
+	      <a [routerLink]="['/inicio']" class="btn-home">
+	      	<img src="{{url}}resources/img/btns/btn-home.png" alt="">
+	      </a>
+	      <a (click)="next()"  *ngIf="controls.btnNext==true" class="btn-next  pull-right">
+	      	<img src="{{url}}resources/img/btns/next.png" alt="">
+	      </a>
+	      <a (click)="back()" *ngIf="controls.btnBack==true" class="btn-back pull-right">
+	      	<img src="{{url}}resources/img/btns/back.png" alt="">
+	      </a>
+	      <a (click)="back()" *ngIf="controls.punctuation==true"  class="btn-back pull-right">
+	      	Punctuacion {{puntuacion_usu}}
+	      </a>
+	    </div>
+	  </div>
+	</div>
+</div>

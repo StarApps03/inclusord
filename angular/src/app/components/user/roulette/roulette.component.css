@@ -1,0 +1,19 @@
+iframe{
+	display: block;
+    width: 100%;
+}
+.navigation a {
+    position: absolute;
+}
+
+#structure{
+   background: #26bfc7;
+    height: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: fixed;
+    width: 100%;
+}

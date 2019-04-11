@@ -1,0 +1,99 @@
+<section id="structure" [ngStyle]="{'background-image': 'url('+background_body+')'}">
+       <!--options of navigation-->
+   <ng-main-level-heading [puntuacion_usu]='puntuacion_usu'></ng-main-level-heading>
+  <!--end option of navigation-->
+
+    <div class="content container">
+        <div class="section1">
+          <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-3 title-letter">
+                <span class="font-border text-center"> {{array_words[position]["word"]}} </span>
+              </div>
+              <div class="col-xs-12 col-sm-12 col-md-9" >
+                <div *ngIf="game_over==false">
+                  <div class="col-md-12" *ngFor="let words of array_words[position].images">
+                      <div class="row">
+                        <div class="col-xs-12 col-sm-6 col-md-6">
+                          <div class="image">
+                            <img (click)="verify(words.response,words.index)"  src="{{url}}resources/img/letter/words_example/{{words.image}}" alt="{{words.index}}" class="data-img">
+                          </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-6">
+                          <div class="content-video">
+                              <video controls="controls" [ngStyle]="{'border-image-source':'url('+border_video+')'}">
+                                <source src="{{url}}resources/video/palabras/{{words.representation}}" type="video/mp4">
+                              </video>
+                            </div>
+                          </div>
+                      </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+
+        <div class="section2 row">
+          <div class="col-md-12">
+              <p class="text-center final-title">
+                  <span class="text-center">FELICITACIONES</span>
+                </p>
+          </div>
+          <div class="col-md-12">
+              
+          <p class="text-center circle">
+            <a><img src="{{url}}resources/img/icons/moneda.png" width="100" alt=""></a>
+            <a><img src="{{url}}resources/img/icons/moneda.png" width="100" alt=""></a>
+            <a><img src="{{url}}resources/img/icons/moneda.png" width="100" alt=""></a>
+          </p>
+          </div>
+          <div class="col-md-12">
+            <p class="text-center">
+              <span class="puntuacion-final">
+               <a href="" class="punt-temp">Puntuacion: <img src="{{url}}resources/img/icons/star.png" alt="" class="img-start-puntuation">  x {{puntuacion_usu}} </a>
+            </span>
+            </p>
+          </div>
+          <div class="col-md-12">
+            <div class="vector">
+                <img src= "{{url}}resources/img/figure/vector.png" width="300" alt="">
+            </div>
+          </div>
+        </div>
+
+     
+   
+        <!--options of navigation-->
+        <!--end option of navigation-->
+        <!--estrellas-->
+        <div class="row-stars">
+          <div class="bing"></div>
+          <ul>
+            <li><img src="{{url}}resources/img/icons/star.png" alt=""></li>
+            <li><img src="{{url}}resources/img/icons/star.png" alt=""></li>
+            <li><img src="{{url}}resources/img/icons/star.png" alt=""></li>
+          </ul>
+        </div>
+        <!--end section estrellas-->
+
+        <!--Modal section punctuation-->
+        <div class="content-start">
+          <div class="body">
+            <div class="stars">
+              <p class="title"> ¡Felicitaciones! </p>
+              <ul class="start-bing">
+                <li data-element="1" style="display: none;"><img src="{{url}}resources/img/icons/star.png" alt=""></li>
+                <li data-element="2" style="display: none;"><img src="{{url}}resources/img/icons/star.png" alt=""></li>
+                <li data-element="3" style="display: none;"><img src="{{url}}resources/img/icons/star.png" alt=""></li>
+              </ul>
+            </div>
+            <button class="btn-continue" (click)="success()">Continuar</button>
+          </div>
+        </div>
+    </div>
+
+      <!--end option of navigation-->
+  
+
+      <!-- end modal section  puntuñation-->
+      
+  </section>

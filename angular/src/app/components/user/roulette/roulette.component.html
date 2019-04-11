@@ -1,0 +1,15 @@
+  <div id="structure" [ngStyle]="{'background-image': 'url('+background_body+')'}">
+		<div class="row">
+		<div class="col-xs-6 col-sm-12 col-mxs112 col-sm-12 col-md-12">
+		  <div class="navigation">
+		    <a [routerLink]="['/inicio']"><img src="{{url}}resources/img/btns/btn-home.png" alt=""></a>
+		  </div>
+		</div>
+	</div>
+	<div class="row">
+		<iframe [src]='sanitizer.bypassSecurityTrustResourceUrl(url+"public/ruleta/index.php")' id ="foo" height="720" frameborder="0"></iframe>
+	</div>
+  </div>
+		
+
+ 

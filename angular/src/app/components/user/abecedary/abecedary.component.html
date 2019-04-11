@@ -1,0 +1,45 @@
+<section id="structure" [ngStyle]="{'background-image': 'url('+background_body+')'}" class="image">
+   <!--options of navigation-->
+  <ng-main-level-heading></ng-main-level-heading>
+  
+  <!--end option of navigation-->
+  <div class="content container">
+    <div class="row" id="stepLetter" *ngIf="operation.stepLetter==true">
+      <div class="col-md-12">
+        <div class="content-video">
+          <video  controls="controls" autoplay="autoplay"  [ngStyle]="{'border-image-source':'url('+border_video+')'}">
+            <source src="{{url}}resources/video/abecedario/{{data[operation.position]['sign']}}" type="video/mp4">
+          </video>
+        </div>
+      </div>
+      <div class="col-md-12">
+        <div class="letter">
+          <a class="lowercase">{{data[operation.position]["letter"]}}</a>
+          <a class="uppercase">{{data[operation.position]["letter"]}}</a>
+        </div>
+      </div>
+    </div> 
+    <div class="clearfix"></div>
+
+
+    <div id="stepWord" *ngIf="operation.stepWord==true">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="word">
+           <p>{{data[operation.position]["words"][0]["word"]}} </p> 
+         </div>
+          <div class="image">
+            <img src="{{url}}resources/img/letter/words_example/{{data[operation.position]['words'][0]['image']}}" alt="">
+          </div>
+        </div>
+        <div class="col-md-8">
+          <div class="content-video">
+            <video controls="controls" autoplay="autoplay" [ngStyle]="{'border-image-source':'url('+border_video+')'}">
+              <source src="{{url}}resources/video/palabras/{{data[operation.position]['words'][0]['representation']}}" type="video/mp4">
+            </video>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
