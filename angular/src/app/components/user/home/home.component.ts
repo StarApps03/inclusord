@@ -11,11 +11,10 @@ export class HomeComponent implements OnInit {
 url:any = "";
 menu_responsive:any = false;
 
-  constructor(api:ApiService) {
-    this.url = api.url
-}
+  constructor(public api:ApiService){}
 
   ngOnInit() {
+    this.url = this.api.url;
   }
 
 

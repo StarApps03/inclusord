@@ -4,8 +4,5 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class ApiService {
-  url:string = '';
-  constructor() { 
-    this.url = "http://senainclusord.000webhostapp.com/";
-  }
+  url:string = "http://localhost/desarrollo/inclusord/public/";
 }

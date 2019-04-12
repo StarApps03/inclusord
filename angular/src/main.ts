@@ -14,4 +14,11 @@ platformBrowserDynamic().bootstrapModule(AppModule).then(ref => {
   let path:string = "http://senainclusord.000webhostapp.com/";
 
   // Otherise, log the boot error
+
+ 
+
+
+
+
 }).catch(err => console.error(err));
+

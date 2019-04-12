@@ -17,7 +17,7 @@ export class LoginComponent implements OnInit {
     constructor(public  api:ApiService, private auth:LoginService) {}
 
     login(user) {
-    	this.auth.login(user).subscribe((data)=>{
+    	this.auth.login(this.user).subscribe((data)=>{
         console.log(data);
     	},(error)=>{
         console.log(error);
@@ -26,5 +26,6 @@ export class LoginComponent implements OnInit {
     
     ngOnInit() {
     }
-
+ 
 }
+ 

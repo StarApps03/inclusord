@@ -19,8 +19,9 @@ export class LoginService {
   }
 
   login(user:User){
+    console.log(user);
      const headers = new HttpHeaders({"Content-type":"application/json"});
-    return this.http.post(this.api.url+"login", user, {headers: headers});
+    return this.http.post(this.api.url+"api/login", user, {headers: headers});
   }
 
    checkCredentials(){ 
@@ -28,4 +29,4 @@ export class LoginService {
         //this._router.navigate(['login']);
     }
   }
-}
+} 

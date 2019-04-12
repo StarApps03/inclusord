@@ -34,8 +34,7 @@
               "src/assets/dist/bootstrap-4.1.3/js/bootstrap.min.js",
               "src/assets/dist/template/docs/js/popper.min.js",
               "src/assets/dist/template/docs/js/main.js",
-              "src/assets/dist/template/docs/js/plugins/pace.min.js",
-              "src/assets/dist/template/docs/js/plugins/chart.js"
+              "src/assets/dist/template/docs/js/plugins/pace.min.js"
             ]
           },
           "configurations": {
