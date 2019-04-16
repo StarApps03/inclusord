@@ -7,7 +7,6 @@ use Illuminate\Support\Facades\Auth;
 use Validator;
 class AuthController extends Controller 
 {
-public $successStatus = 200;
 /** 
      * login api 
      * 
@@ -17,12 +16,11 @@ public $successStatus = 200;
         if(Auth::attempt(['email' => request('email'), 'password' => request('password')])){ 
             $user = Auth::user(); 
             $success['token'] =  $user->createToken('MyApp')->accessToken;
-            return response()->json(['success' => $success], $this->successStatus); 
+            return response()->json(['success' => $success], 200); 
         } 
         else{ 
             return response()->json(['error'=>'Sus datos de acceso son invalidos'], 401); 
         } 
-        return response()->json(['response'=>'credenciales incorrectas'],401);
     }
 /** 
      * Register api 

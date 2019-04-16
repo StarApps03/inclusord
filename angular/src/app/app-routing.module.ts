@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-
+//components
 import { HomeComponent } from './components/user/home/home.component';
 import { VowelsComponent } from './components/user/vowels/vowels.component';
 import { AbecedaryComponent } from './components/user/abecedary/abecedary.component';
@@ -14,6 +14,11 @@ import { AppApprenticeComponent } from './components/layouts/app-apprentice/app-
 import { NotFoundComponent } from './components/error/not-found.component';
 import { DashboardComponent } from './components/administrator/dashboard/dashboard.component';
 import { LetterComponent } from './components/administrator/letter/letter.component';
+import { ProfileComponent } from './components/profile/profile.component';
+//guards
+
+import { AuthGuard } from './guards/auth.guard';
+import { IsAuthenticatedGuard } from './guards/is-authenticated.guard';
 
 
 const routes: Routes = [
@@ -29,11 +34,12 @@ const routes: Routes = [
   	path : '',
   	component: AppAdministratorComponent,
   	children: [
-  		{ path: 'administracion/home', component: DashboardComponent},
+  		{ path: 'administracion/home', component: DashboardComponent, canActivate: [AuthGuard]},
       { path: 'administracion/letras', component: LetterComponent},
+      { path: 'administracion/perfil', component: ProfileComponent ,canActivate: [AuthGuard]},
   	]
   },
-  { path:"acceso", component:LoginComponent},
+  { path:"acceso", component:LoginComponent, canActivate: [IsAuthenticatedGuard]},
   { path:"inicio", component:HomeComponent},
   { path:"vocales", component:VowelsComponent},
   { path:"abecedario", component:AbecedaryComponent},

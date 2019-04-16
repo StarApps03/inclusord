@@ -19,7 +19,6 @@ export class LoginService {
   }
 
   login(user:User){
-    console.log(user);
      const headers = new HttpHeaders({"Content-type":"application/json"});
     return this.http.post(this.api.url+"api/login", user, {headers: headers});
   }

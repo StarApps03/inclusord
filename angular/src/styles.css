@@ -14536,6 +14536,8 @@ fieldset[disabled] .form-group.is-focused .togglebutton label {
   padding-bottom: 30px;
 }
 
+
+
 .sidebar .sidebar-wrapper .dropdown .dropdown-backdrop {
   display: none !important;
 }
@@ -18916,4 +18918,11 @@ Copyright (c) 2015 Daniel Eden
   margin-top: 70px;
 }
 
+
+.sidebar-wrapper li {
+  cursor: pointer !important;
+}
+.sidebar-wrapper li:hover, .sidebar-wrapper li a:hover, .sidebar-wrapper li a i:hover{
+  color: #777 !important
+}
 /*============================================end style administracion ====================================*/
