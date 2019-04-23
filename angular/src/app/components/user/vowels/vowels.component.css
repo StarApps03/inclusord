@@ -62,6 +62,7 @@
     -webkit-text-stroke-width: 5.75px;
     padding: 0 100px;
 }
+
 #stepLetter .letter .uppercase{
     text-transform: uppercase;
 }
@@ -131,7 +132,7 @@
 #stepExample .word p{
     opacity: 0;
     width: 60%;
-    margin:auto;
+    margin: 10px auto 25px;
     display: block;
     padding: 10px 5px;
     background: #ccc;

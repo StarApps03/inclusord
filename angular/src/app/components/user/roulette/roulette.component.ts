@@ -25,8 +25,8 @@ export class RouletteComponent implements OnInit {
 
   ngOnInit() {
         console.log("cargando");
-  		  this.border_video = this.url + "resources/img/figure/vector1.png";
-        this.background_body = this.url + "resources/img/backgrounds/background_one.png";
+  		  this.border_video = this.url + "img/figure/vector1.png";
+        this.background_body = this.url + "img/backgrounds/background_one.png";
   }
 
 

@@ -17,7 +17,7 @@ class User extends Authenticatable
      * @var array
      */
     protected $fillable = [
-        'name', 'userName', 'email', 'password','name',"userName","photo",'address','status','birthDate','telephone','email','email_verified_at','password','api_token'
+        'name', 'userName', 'email', 'password',"photo",'address','status','birthDate','telephone','email','email_verified_at','password','api_token'
     ];
 
     /**
@@ -37,4 +37,9 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+
+    public function typeRole(){
+        return $this->hasMany("App/typeRole");
+    }
 }

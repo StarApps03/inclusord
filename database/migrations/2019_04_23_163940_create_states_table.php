@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateRolesTable extends Migration
+class CreateStatesTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,10 +13,15 @@ class CreateRolesTable extends Migration
      */
     public function up()
     {
-        Schema::create('role', function (Blueprint $table) {
+        Schema::create('state', function (Blueprint $table) {
             $table->increments('id');
-            $table->string("nameRole");
+            $table->integer("idCountry")->unsigned();
+            $table->string("nameState");
             $table->timestamps();
+            $table->rememberToken();
+
+            //
+            $table->foreign("idCountry")->references("id")->on("country")->delete("cascade");
         });
     }
 
@@ -27,6 +32,6 @@ class CreateRolesTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('role');
+        Schema::dropIfExists('state');
     }
 }

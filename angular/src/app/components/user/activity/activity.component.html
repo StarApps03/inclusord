@@ -15,13 +15,13 @@
                       <div class="row">
                         <div class="col-xs-12 col-sm-6 col-md-6">
                           <div class="image">
-                            <img (click)="verify(words.response,words.index)"  src="{{url}}resources/img/letter/words_example/{{words.image}}" alt="{{words.index}}" class="data-img">
+                            <img (click)="verify(words.response,words.index)"  src="{{url}}img/letter/words_example/{{words.image}}" alt="{{words.index}}" class="data-img">
                           </div>
                         </div>
                         <div class="col-xs-12 col-sm-6 col-md-6">
                           <div class="content-video">
                               <video controls="controls" [ngStyle]="{'border-image-source':'url('+border_video+')'}">
-                                <source src="{{url}}resources/video/palabras/{{words.representation}}" type="video/mp4">
+                                <source src="{{url}}video/palabras/{{words.representation}}" type="video/mp4">
                               </video>
                             </div>
                           </div>
@@ -41,21 +41,21 @@
           <div class="col-md-12">
               
           <p class="text-center circle">
-            <a><img src="{{url}}resources/img/icons/moneda.png" width="100" alt=""></a>
-            <a><img src="{{url}}resources/img/icons/moneda.png" width="100" alt=""></a>
-            <a><img src="{{url}}resources/img/icons/moneda.png" width="100" alt=""></a>
+            <a><img src="{{url}}img/icons/moneda.png" width="100" alt=""></a>
+            <a><img src="{{url}}img/icons/moneda.png" width="100" alt=""></a>
+            <a><img src="{{url}}img/icons/moneda.png" width="100" alt=""></a>
           </p>
           </div>
           <div class="col-md-12">
             <p class="text-center">
               <span class="puntuacion-final">
-               <a href="" class="punt-temp">Puntuacion: <img src="{{url}}resources/img/icons/star.png" alt="" class="img-start-puntuation">  x {{puntuacion_usu}} </a>
+               <a href="" class="punt-temp">Puntuacion: <img src="{{url}}img/icons/star.png" alt="" class="img-start-puntuation">  x {{puntuacion_usu}} </a>
             </span>
             </p>
           </div>
           <div class="col-md-12">
             <div class="vector">
-                <img src= "{{url}}resources/img/figure/vector.png" width="300" alt="">
+                <img src= "{{url}}img/figure/vector.png" width="300" alt="">
             </div>
           </div>
         </div>
@@ -68,9 +68,9 @@
         <div class="row-stars">
           <div class="bing"></div>
           <ul>
-            <li><img src="{{url}}resources/img/icons/star.png" alt=""></li>
-            <li><img src="{{url}}resources/img/icons/star.png" alt=""></li>
-            <li><img src="{{url}}resources/img/icons/star.png" alt=""></li>
+            <li><img src="{{url}}img/icons/star.png" alt=""></li>
+            <li><img src="{{url}}img/icons/star.png" alt=""></li>
+            <li><img src="{{url}}img/icons/star.png" alt=""></li>
           </ul>
         </div>
         <!--end section estrellas-->
@@ -81,9 +81,9 @@
             <div class="stars">
               <p class="title"> ¡Felicitaciones! </p>
               <ul class="start-bing">
-                <li data-element="1" style="display: none;"><img src="{{url}}resources/img/icons/star.png" alt=""></li>
-                <li data-element="2" style="display: none;"><img src="{{url}}resources/img/icons/star.png" alt=""></li>
-                <li data-element="3" style="display: none;"><img src="{{url}}resources/img/icons/star.png" alt=""></li>
+                <li data-element="1" style="display: none;"><img src="{{url}}img/icons/star.png" alt=""></li>
+                <li data-element="2" style="display: none;"><img src="{{url}}img/icons/star.png" alt=""></li>
+                <li data-element="3" style="display: none;"><img src="{{url}}img/icons/star.png" alt=""></li>
               </ul>
             </div>
             <button class="btn-continue" (click)="success()">Continuar</button>

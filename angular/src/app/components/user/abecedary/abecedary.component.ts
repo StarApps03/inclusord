@@ -26,8 +26,8 @@ export class AbecedaryComponent implements OnInit {
 
   ngOnInit() {
     this.url = this.api.url;
-    this.border_video = this.url + "resources/img/figure/vector1.png";
-    this.background_body = this.url + "resources/img/backgrounds/background_one.png";
+    this.border_video = this.url + "img/figure/vector1.png";
+    this.background_body = this.url + "img/backgrounds/background_one.png";
     this.getAlphabet();
   }
 

@@ -40,8 +40,8 @@ export class ActivityComponent implements OnInit  {
 
   ngOnInit() {
     this.url_active = this.rutaActiva.snapshot.params["nombre"];
-        this.border_video = this.url + "resources/img/figure/vector1.png";
-        this.background_body = this.url + "resources/img/backgrounds/background_one.png";
+        this.border_video = this.url + "img/figure/vector1.png";
+        this.background_body = this.url + "img/backgrounds/background_one.png";
   }
   //
   words(){
@@ -84,7 +84,7 @@ export class ActivityComponent implements OnInit  {
              $("li[data-element="+i+"]").show();          }
           this.puntuacion_usu = this.puntuacion_usu + this.cant_stars;
 
-           $("img[alt="+index+"]").before("<img class='img-error' src='"+this.url+"resources/img/icons/success.png'/>");
+           $("img[alt="+index+"]").before("<img class='img-error' src='"+this.url+"img/icons/success.png'/>");
            $(".img-error").css({
             "width": "170px",
             "display": "block",
@@ -96,7 +96,7 @@ export class ActivityComponent implements OnInit  {
             "right": "0"
           });
       }else{
-        $("img[alt="+index+"]").before("<img class='img-error' src='"+this.url+"resources/img/icons/error.png'/>");
+        $("img[alt="+index+"]").before("<img class='img-error' src='"+this.url+"img/icons/error.png'/>");
         $(".img-error").css({
             "width": "170px",
             "display": "block",
