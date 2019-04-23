@@ -1,4 +1,65 @@
-body{
+@extends("layouts.app")
+
+@section('content')
+<div class="ruleta">
+<canvas id='canvas' height="470" width="600"></canvas>
+  <div class="options">
+    <a onclick="miRuleta.startAnimation();" class="btn-start">
+      <img src="https://rxconcile.com/wp-content/themes/rxconcile/assets/img/playButton.png">
+    </a>
+    <a onclick="restart();" class="btn-reload">
+      <img src="https://d2gg9evh47fn9z.cloudfront.net/thumb_COLOURBOX5721291.jpg">
+    </a>
+ </div>
+</div>
+
+<div class="modal fade" id="record-modal" >
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-body">
+        <div class="img-letter">
+          <img src="">
+        </div>
+        <div class="row">
+           <div class="col-xs-12 col-md-6">
+            <div class="video-letter">
+              <video src="" controls="controls"></video>
+              <p class="text-center"></p>
+            </div>
+          </div>
+          <div class="col-xs-12 col-md-6">
+            <div class="video-word">
+              <video src="" controls="controls"></video>
+              <p></p>
+            </div>
+          </div>
+           <div class="col-xs-12 col-md-12">
+            <div class="options text-center">
+              <a href="#" class="btn btn-danger" onclick="nextStep('0')">Cancelar</a>
+              <a href="#" class="btn btn-success" onclick="nextStep('1')">Continuar</a>
+            </div>
+          </div>
+        </div>
+         
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+
+
+
+
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+ <script src="{{asset('assets/js/routletController.js')}}"></script>
+ <script>
+   window.onload = function(){
+    $(".ring").hide();
+   }
+ </script>
+ <style type="text/css">
+ 	body{
 	background: #0000;
     position: fixed;
     background-attachment: cover;
@@ -24,12 +85,11 @@ body{
 .ruleta{
 	width: 600px;
 	display: block;
-	margin: auto;
+	margin: 100px auto 0;
 }
 #canvas {
     width: 100%;
-    margin: 100px auto 0;
-    display: block;
+    margin-left: 50px;
 }
 .options{
     display: block;
@@ -176,3 +236,5 @@ body{
         margin-left: 21px;
     }
 }
+ </style>
+@endsection

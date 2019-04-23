@@ -7,7 +7,7 @@ var distnaciaX = 150;
 var distnaciaY = 50;
 var letter_ping;
 var duration = 0;
-var url = "http://senainclusord.000webhostapp.com/";
+var url = "http://localhost/desarrollo/inclusord/public/";
 var visible = false;
 
 //
@@ -399,12 +399,12 @@ function restart(){
 function showResponseCheck(Segmento){
   $("#record-modal").modal("show");
   $(".title").html("<h3>"+Segmento+url+"</h3>");
-  var src_img = url + "resources/img/letter/"+Segmento+".png";
-  var src_vid_letter = url + "resources/video/abecedario/" + Segmento+".mp4";
+  var src_img = url + "img/letter/"+Segmento+".png";
+  var src_vid_letter = url + "video/abecedario/" + Segmento+".mp4";
   var src_vid_word = "";
   for (var i = 0;  i < words.length; i++) {
     if(words[i]["letter"].toLowerCase()==Segmento.toLowerCase()){
-     src_vid_word = url + "resources/video/palabras/" + words[i]["words"][0]["representation"];
+     src_vid_word = url + "video/palabras/" + words[i]["words"][0]["representation"];
     }
   }
   $(".img-letter img").attr("src",src_img);
