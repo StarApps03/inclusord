@@ -1,0 +1,71 @@
+#header {
+    padding: 0 0 20px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    transition: all .5s;
+    z-index: 997;
+}
+.main-menu>.row {
+    padding: 0 15px;
+}
+
+.align-items-center {
+    -ms-flex-align: center!important;
+    align-items: center!important;
+}
+.justify-content-between {
+    -ms-flex-pack: justify!important;
+    justify-content: space-between!important;
+}
+.d-flex {
+    display: -ms-flexbox!important;
+    display: flex!important;
+}
+
+
+<i class="fa fa-adjust"></i> Realización de trámites <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-angle-double-right"></i>técnicos<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-angle-double-right"></i>legales<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-angle-double-right"></i>Ambientales<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-angle-double-right"></i>Sociales<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-angle-double-right"></i>Prediales <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-angle-double-right"></i>inmobiliarios<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-angle-double-right"></i>Comerciales<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-angle-double-right"></i>Financieros<br/>
+
+
+<i class="fa fa-adjust"></i> Seguimiento y control de los recursos del proyecto <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-angle-double-right"></i>Personal<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-angle-double-right"></i>legales<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-angle-double-right"></i>materiales<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-angle-double-right"></i>Maquinaria y equipos<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-angle-double-right"></i>Costos<br/>
+
+
+#header #logo img {
+    padding: 0;
+    margin: 0;
+}
+
+
+<p style="text-align:center;"> MGH PROYECTOS <br/> <small>Redes Sociales</small></p>
+<ul class="social">
+      <li><a target="blank" href="https://www.facebook.com/MGHProyectos"><i class="fa fa-facebook"></i></a></li>
+      <li><a target="blank" href="https://www.facebook.com/MGHProyectos"><i class="fa fa-twiter"></i></a></li>
+      <li><a target="blank" href="https://www.instagram.com/mghproyectos"><i class="fa fa-instagram"></i></a></li>
+ 	  <li><a target="blank" href="https://www.instagram.com/mghproyectos"><i class="fa fa-linkedin"></i></a></li>
+
+</ul>
+
+<style>
+.social{
+width:50px;margin:auto;display:flex
+}
+
+.social li{
+  margin:0 0 0 10px;
+}
+</style>
+<br>

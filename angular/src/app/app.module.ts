@@ -12,14 +12,14 @@ import { AbecedaryComponent } from './components/user/abecedary/abecedary.compon
 import { ActivityComponent } from './components/user/activity/activity.component';
 import { RouletteComponent } from './components/user/roulette/roulette.component';
 import { MainLevelHeadingComponent } from './components/user/layouts/main-level-heading/main-level-heading.component';
-import { AppAdministratorComponent } from './components/layouts/app-administrator.component';
 import { LoginComponent } from './components/login/login.component';
 import { RegisterComponent } from './components/register/register.component';
 import { ProfileComponent } from './components/profile/profile.component';
-import { AppApprenticeComponent } from './components/layouts/app-apprentice/app-apprentice.component';
 import { NotFoundComponent } from './components/error/not-found.component';
 import { DashboardComponent } from './components/administrator/dashboard/dashboard.component';
 import { LetterComponent } from './components/administrator/letter/letter.component';
+import { MainComponent } from './components/layouts/main.component';
+import { ClientModule } from './module/client/client.module';
 
 
 
@@ -28,26 +28,25 @@ import { LetterComponent } from './components/administrator/letter/letter.compon
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent,
     VowelsComponent,
     AbecedaryComponent,
     ActivityComponent,
     RouletteComponent,
     MainLevelHeadingComponent,
-    AppAdministratorComponent,
     LoginComponent,
     RegisterComponent,
     ProfileComponent,
-    AppApprenticeComponent,
     NotFoundComponent,
     DashboardComponent,
-    LetterComponent
+    LetterComponent,
+    MainComponent
   ],
   imports: [
     BrowserModule,
     routing,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    ClientModule
   ],
   providers: [
   {provide: LocationStrategy, useClass:HashLocationStrategy},
