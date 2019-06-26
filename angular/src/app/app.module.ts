@@ -6,7 +6,7 @@ import { HttpClientModule} from '@angular/common/http';
 
 import { routing } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HomeComponent } from './components/user/home/home.component';
+import { HomeComponent } from './components/home/home.component';
 import { VowelsComponent } from './components/user/vowels/vowels.component';
 import { AbecedaryComponent } from './components/user/abecedary/abecedary.component';
 import { ActivityComponent } from './components/user/activity/activity.component';
@@ -20,9 +20,6 @@ import { DashboardComponent } from './components/administrator/dashboard/dashboa
 import { LetterComponent } from './components/administrator/letter/letter.component';
 import { MainComponent } from './components/layouts/main.component';
 import { ClientModule } from './module/client/client.module';
-
-
-
 
 
 @NgModule({
@@ -39,7 +36,8 @@ import { ClientModule } from './module/client/client.module';
     NotFoundComponent,
     DashboardComponent,
     LetterComponent,
-    MainComponent
+    MainComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,

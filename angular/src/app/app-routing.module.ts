@@ -17,26 +17,12 @@ import { ProfileComponent } from './components/profile/profile.component';
 import { AuthGuard } from './guards/auth.guard';
 import { IsAuthenticatedGuard } from './guards/is-authenticated.guard';
 import { MainComponent } from './components/layouts/main.component';
+import {HomeComponent } from './components/home/home.component';
 
 
 const routes: Routes = [
-/* {
-  	path : '',
-  	component: AppApprenticeComponent,
-  	children: [
-  		{ path: 'aprendiz', component: RegisterComponent },
-  	]
-  },
-  {
-  	path : '',
-  	component: AppAdministratorComponent,
-  	children: [
-  		{ path: 'administracion/home', component: DashboardComponent, canActivate: [AuthGuard]},
-      { path: 'administracion/letras', component: LetterComponent},
-      { path: 'administracion/perfil', component: ProfileComponent ,canActivate: [AuthGuard]},
-  	]
-  },*/
- 
+  {path:'',redirectTo:'inicio', pathMatch:'full'},
+  {path:"inicio", component:HomeComponent},
   { path:"acceso", component:LoginComponent, canActivate: [IsAuthenticatedGuard]},
   { path:"vocales", component:VowelsComponent},
   { path:"abecedario", component:AbecedaryComponent},

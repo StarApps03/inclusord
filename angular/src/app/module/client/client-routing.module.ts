@@ -4,12 +4,11 @@ import { MainComponent } from 'src/app/components/layouts/main.component';
 import { HomeComponent } from 'src/app/components/user/home/home.component';
 
 const routes: Routes = [
-  {path:'',redirectTo:'inicio', pathMatch:'full'},
   {
     path:'',
     component:MainComponent,
     children:[
-      {path:'inicio',component:HomeComponent}
+      {path:'inicio2',component:HomeComponent}
     ]
   }
 ];

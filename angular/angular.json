@@ -27,7 +27,14 @@
               "src/assets/dist/bootstrap-4.1.3/css/bootstrap.min.css",
               "src/assets/fonts/font-awesome-4.7.0/css/font-awesome.min.css",
               "src/assets/dist/template/docs/css/main.css",
-              "src/assets/dist/ihover/src/ihover.css"
+              "src/assets/dist/ihover/src/ihover.css",
+              "src/assets/dist/landy/vendor/bootstrap/css/bootstrap.min.css",
+              "src/assets/dist/landy/vendor/font-awesome/css/font-awesome.min.css",
+              "src/assets/dist/landy/css/landy-iconfont.css",
+              "src/assets/dist/landy/vendor/owl.carousel/assets/owl.carousel.css",
+              "src/assets/dist/landy/vendor/owl.carousel/assets/owl.theme.default.css",
+              "src/assets/dist/landy/css/style.default.css",
+              "src/assets/dist/landy/css/custom.css"
             ],
             "scripts": [
               "src/assets/dist/lib/jquery-3.2.1.min.js",
