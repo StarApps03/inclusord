@@ -21,8 +21,6 @@ import {HomeComponent } from './components/home/home.component';
 
 
 const routes: Routes = [
-  {path:'',redirectTo:'inicio', pathMatch:'full'},
-  {path:"inicio", component:HomeComponent},
   { path:"acceso", component:LoginComponent, canActivate: [IsAuthenticatedGuard]},
   { path:"vocales", component:VowelsComponent},
   { path:"abecedario", component:AbecedaryComponent},
