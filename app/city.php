@@ -16,6 +16,6 @@ class city extends Model
 
 
     public function headquarters(){
-    	return $this->hasMany("App/headquarters"),
+    	return $this->hasMany("App/headquarters");
     }
 }
