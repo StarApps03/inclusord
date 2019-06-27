@@ -1,10 +1,10 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 //components
-import { VowelsComponent } from './components/user/vowels/vowels.component';
-import { AbecedaryComponent } from './components/user/abecedary/abecedary.component';
-import { ActivityComponent } from './components/user/activity/activity.component';
-import { RouletteComponent } from './components/user/roulette/roulette.component';
+import { VowelsComponent } from './components/levels/basic_level/alphabet/vowels/vowels.component';
+import { AbecedaryComponent } from './components/levels/basic_level/alphabet/abecedary/abecedary.component';
+import { ActivityComponent } from './components/levels/basic_level/alphabet/activity/activity.component';
+import { RouletteComponent } from './components/levels/basic_level/alphabet/roulette/roulette.component';
 import { LoginComponent } from './components/login/login.component';
 import { RegisterComponent } from './components/register/register.component';
 import { AppComponent } from './app.component';

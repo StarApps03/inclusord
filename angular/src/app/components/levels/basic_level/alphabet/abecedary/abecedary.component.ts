@@ -2,7 +2,7 @@ import { Component, OnInit, Input, Output, ViewChild, EventEmitter , Injectable}
 import { ApiService} from 'src/app/services/api.service';
 import { Session } from 'protractor';
 import { LetterService } from 'src/app/services/letter.service'; 
-import { MainLevelHeadingComponent } from 'src/app/components/user/layouts/main-level-heading/main-level-heading.component';
+import { MainLevelHeadingComponent } from 'src/app/components/levels/basic_level/alphabet/layouts/main-level-heading/main-level-heading.component';
 declare var $:any;
 
 @Component({

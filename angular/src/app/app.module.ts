@@ -6,12 +6,12 @@ import { HttpClientModule} from '@angular/common/http';
 
 import { routing } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HomeComponent } from './components/home/home.component';
-import { VowelsComponent } from './components/user/vowels/vowels.component';
-import { AbecedaryComponent } from './components/user/abecedary/abecedary.component';
-import { ActivityComponent } from './components/user/activity/activity.component';
-import { RouletteComponent } from './components/user/roulette/roulette.component';
-import { MainLevelHeadingComponent } from './components/user/layouts/main-level-heading/main-level-heading.component';
+//import { HomeComponent } from './components/home/home.component';
+import { VowelsComponent } from './components/levels/basic_level/alphabet/vowels/vowels.component';
+import { AbecedaryComponent } from './components/levels/basic_level/alphabet/abecedary/abecedary.component';
+import { ActivityComponent } from './components/levels/basic_level/alphabet/activity/activity.component';
+import { RouletteComponent } from './components/levels/basic_level/alphabet/roulette/roulette.component';
+import { MainLevelHeadingComponent } from './components/levels/basic_level/alphabet/layouts/main-level-heading/main-level-heading.component';
 import { LoginComponent } from './components/login/login.component';
 import { RegisterComponent } from './components/register/register.component';
 import { ProfileComponent } from './components/profile/profile.component';
@@ -37,7 +37,7 @@ import { ClientModule } from './module/client/client.module';
     DashboardComponent,
     LetterComponent,
     MainComponent,
-    HomeComponent
+    //HomeComponent
   ],
   imports: [
     BrowserModule,

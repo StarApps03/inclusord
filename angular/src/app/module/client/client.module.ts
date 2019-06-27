@@ -2,8 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { ClientRoutingModule } from './client-routing.module';
-import { HomeComponent } from 'src/app/components/user/home/home.component';
-
+import { HomeComponent } from 'src/app/components/home/home.component';
 @NgModule({
   imports: [
     CommonModule,

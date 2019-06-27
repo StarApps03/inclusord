@@ -1,6 +1,6 @@
 import { Component, OnInit, Output, EventEmitter, Input } from '@angular/core';
-import { AbecedaryComponent } from 'src/app/components/user/abecedary/abecedary.component';
-import { VowelsComponent } from 'src/app/components/user/vowels/vowels.component';
+import { AbecedaryComponent } from 'src/app/components/levels/basic_level/alphabet/abecedary/abecedary.component';
+import { VowelsComponent } from 'src/app/components/levels/basic_level/alphabet/vowels/vowels.component';
 import { LetterService } from 'src/app/services/letter.service';
 import { ApiService } from 'src/app/services/api.service';
 
